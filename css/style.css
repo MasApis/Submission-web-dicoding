@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', Arial, san-serif;
+  background-color: #181C14;
+}
+
+nav {
+  /* border: 1px solid white; */
+  /* background-color: #3C3D37; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 1.5rem 2rem; */
+}
+
+nav .navigation {
+  display: flex;
+  background-color:  #3C3D37;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+}
+
+nav .navigation .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ECDFCC  ;
+  letter-spacing: 2px;
+}
+
+nav .navigation .navigation-button ul {
+  display: flex;
+  gap: 3rem;
+}
+
+nav .navigation .navigation-button ul li a {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+
+nav .navigation .navigation-button ul li a:hover {
+  color: black;
+  padding: 0.5rem 1rem;
+  background-color: #ECDFCC;
+  border-radius: 0.5rem;
+}
+
+nav .hero-section {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 944px;
+}
+
+nav .hero-section h1 {
+  font-size: 7.5rem;
+  color: #ECDFCC;
+  font-weight: 700;
+}
+
+nav .hero-section h2 {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+nav .hero-section p {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+nav .button {
+  margin-block: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav .button .instagram {
+  border: 3px solid white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in;
+}
+
+nav .hero-section .button .github {
+  border: 3px solid white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in;
+}
+
+nav .hero-section .button .instagram:hover {
+  background-color: #ECDFCC;
+  color: black;
+}
+
+nav .hero-section .button .github:hover {
+  background-color: #ECDFCC;
+  color: black;
+}
+
+/* main */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+   background-color: #697565;
+}
+
+main .content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+main .content .about {
+  /* margin: auto; */
+  max-width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* flex: 1 1; */
+  padding: 2.5rem 2rem;
+}
+
+main .content .about .about-image {
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+main .content .about .about-image img {
+  width: 400px;
+  border-radius: 5px;
+}
+
+main .content .about .description-about {
+  display: flex;
+  flex-direction: column;
+}
+
+main .content .about .description-about .heading-description-top {
+  font-size: 5.5rem;
+  color: white;
+}
+
+main .content .about .description-about .heading-description-bottom {
+  font-size: 3.5rem;
+  color: #ECDFCC;
+  margin-top: -1.4rem;
+
+}
+
+main .content .about .description-about p {
+  font-size: 1.3rem;
+  text-align: justify;
+  color: white;
+  /* width: 100%; */
+}
+
+main .content .about .description-about .instagram {
+  border: 3px solid white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in;
+  width: 335px;
+  margin-top: 1rem;
+}
+
+main .content .about .description-about .instagram:hover {
+  background-color: #ECDFCC;
+  color: black;
+}
+
+main .content .cpu {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  background-color: #697565;
+  padding: 2.5rem 2rem;
+}
