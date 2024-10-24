@@ -7,58 +7,51 @@
 }
 
 body {
-  height: 100vh;
+  height: 200vh;
   font-family: 'Poppins', Arial, san-serif;
   background-color: #181C14;
 }
 
-nav {
-  /* border: 1px solid white; */
-  /* background-color: #3C3D37; */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  /* padding: 1.5rem 2rem; */
-}
 
-nav .navigation {
+header nav {
   display: flex;
+  width: 100%;
   background-color:  #3C3D37;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 1000;
   align-items: center;
   padding: 1.5rem 2rem;
   justify-content: space-between;
 }
 
-nav .navigation .logo {
-  font-size: 2.5rem;
+header nav .logo {
+  font-size: 2rem;
   font-weight: 700;
-  color: #ECDFCC  ;
+  color: #ECDFCC;
   letter-spacing: 2px;
 }
 
-nav .navigation .navigation-button ul {
+header nav .navigation-button ul {
   display: flex;
   gap: 3rem;
 }
 
-nav .navigation .navigation-button ul li a {
-  font-size: 1.5rem;
+header nav .navigation-button ul li a {
+  font-size: 1.3rem;
   color: white;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
 }
 
-nav .navigation .navigation-button ul li a:hover {
+header nav .navigation-button ul li a:hover {
   color: black;
   padding: 0.5rem 1rem;
   background-color: #ECDFCC;
   border-radius: 0.5rem;
 }
 
-nav .hero-section {
+header .hero-section {
   /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
@@ -69,31 +62,31 @@ nav .hero-section {
   min-height: 944px;
 }
 
-nav .hero-section h1 {
-  font-size: 7.5rem;
+header .hero-section h1 {
+  font-size: 6rem;
   color: #ECDFCC;
   font-weight: 700;
 }
 
-nav .hero-section h2 {
-  font-size: 4.5rem;
+header .hero-section h2 {
+  font-size: 4rem;
   color: white;
   font-weight: 600;
 }
 
-nav .hero-section p {
+header .hero-section p {
   font-size: 2rem;
   color: white;
   font-weight: 500;
 }
 
-nav .button {
+header .hero-section .button {
   margin-block: 2rem;
   display: flex;
   gap: 2rem;
 }
 
-nav .button .instagram {
+header .hero-section .button .instagram {
   border: 3px solid white;
   padding: 1rem 2rem;
   border-radius: 999px;
@@ -103,7 +96,7 @@ nav .button .instagram {
   transition: all 0.4s ease-in;
 }
 
-nav .hero-section .button .github {
+header .hero-section .button .github {
   border: 3px solid white;
   padding: 1rem 2rem;
   border-radius: 999px;
@@ -113,12 +106,12 @@ nav .hero-section .button .github {
   transition: all 0.4s ease-in;
 }
 
-nav .hero-section .button .instagram:hover {
+header .hero-section .button .instagram:hover {
   background-color: #ECDFCC;
   color: black;
 }
 
-nav .hero-section .button .github:hover {
+header .hero-section .button .github:hover {
   background-color: #ECDFCC;
   color: black;
 }
@@ -126,14 +119,17 @@ nav .hero-section .button .github:hover {
 /* main */
 main {
   width: 100%;
+  position: relative;
   display: flex;
+  padding: 1rem;
   flex-direction: column;
-   background-color: #697565;
+  background-color: #697565;
 }
 
 main .content {
   display: flex;
   flex: 1;
+  margin-top: 2rem;
   flex-direction: column;
 }
 
@@ -154,7 +150,7 @@ main .content .about .about-image {
 }
 
 main .content .about .about-image img {
-  width: 400px;
+  width: 320px;
   border-radius: 5px;
 }
 
@@ -164,19 +160,19 @@ main .content .about .description-about {
 }
 
 main .content .about .description-about .heading-description-top {
-  font-size: 5.5rem;
+  font-size: 4rem;
   color: white;
 }
 
 main .content .about .description-about .heading-description-bottom {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #ECDFCC;
   margin-top: -1.4rem;
 
 }
 
 main .content .about .description-about p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: justify;
   color: white;
   /* width: 100%; */
@@ -200,9 +196,117 @@ main .content .about .description-about .instagram:hover {
 }
 
 main .content .cpu {
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  display: flex;
+  max-width: 70%;
+  flex-direction: column;
+  padding: 2.5rem 2rem;
+}
+
+main .content .cpu .title-cpu {
   display: flex;
   align-items: center;
-  background-color: #697565;
-  padding: 2.5rem 2rem;
+  gap: 2rem;
+}
+
+main .content .cpu .description-cpu {
+  display: flex;
+  flex-direction: column;
+}
+
+main .content .cpu .description-cpu h1 {
+  font-size: 3.3rem;
+  color: white;
+}
+
+main .content .cpu .description-cpu .color-cpu {
+  color: #ECDFCC;
+}
+
+main .content .cpu .description-cpu p {
+  font-size: 1.1rem;
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+}
+
+main .content .cpu .title-cpu .image-cpu {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+main .content .cpu .title-cpu .image-cpu img {
+  width: 400px;
+  border-radius: 5px;
+}
+
+main .content .cpu .title-cpu .button-cpu {
+  border: 3px solid white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in;
+  width: 280px;
+  margin-top: 1rem;
+}
+
+main .content .cpu .title-cpu .button-cpu:hover {
+  color: black;
+  background-color: #ECDFCC;
+}
+
+main .content .cpu .cpu-intel {
+  padding: 2.5rem 0rem;
+}
+
+main .content .cpu .cpu-intel .title-cpu-intel {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .content .cpu .cpu-intel .title-cpu-intel .image-cpu-intel img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+main .content .cpu .cpu-intel .title-cpu-intel .description-cpu-intel {
+  display: flex;
+  flex-direction: column;
+}
+
+main .content .cpu .cpu-intel .title-cpu-intel .description-cpu-intel h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+main .content .cpu .cpu-intel .title-cpu-intel .description-cpu-intel .color-intel {
+  color: #1230AE;
+}
+
+main .content .cpu .cpu-intel .title-cpu-intel .description-cpu-intel p {
+  font-size: 1.1rem;
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+}
+
+main .content .cpu .cpu-intel .title-cpu-intel .description-cpu-intel .button-cpu-intel {
+  border: 3px solid white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in;
+  width: 290px;
+  margin-top: 1rem;
+}
+
+main .content .cpu .cpu-intel .title-cpu-intel .description-cpu-intel .button-cpu-intel:hover {
+  color: black;
+  background-color: #ECDFCC;
 }

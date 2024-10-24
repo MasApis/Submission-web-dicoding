@@ -20,36 +20,34 @@
 
     <header>
       <nav>
-        <div class="navigation">
-          <div class="logo">
-            masapistech
-          </div>
-          <div class="navigation-button">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Cpu</a></li>
-              <li><a href="#">Gpu</a></li>
-              <li><a href="#">Monitor</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
-          </div>
+        <div class="logo">
+          masapistech
         </div>
-        <div class="hero-section">
-          <h1>masapistech</h1>
-          <h2>Discuss all about technology</h2>
-          <p>"Keep learning and always be greatfull</p>
-          <div class="button">
-            <a href="" class="instagram"><i class="ph ph-instagram-logo"></i> follow my instagram</a>
-            <a href="" class="github"><i class="ph ph-github-logo"></i> follow my github</a>
-          </div>
+        <div class="navigation-button">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cpu">Cpu</a></li>
+            <li><a href="#">Gpu</a></li>
+            <li><a href="#">Monitor</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
         </div>
       </nav>
+      <div class="hero-section" id="home">
+        <h1>masapistech</h1>
+        <h2>Discuss all about technology</h2>
+        <p>"Keep learning and always be greatfull</p>
+        <div class="button">
+          <a href="" class="instagram"><i class="ph ph-instagram-logo"></i> follow my instagram</a>
+          <a href="" class="github"><i class="ph ph-github-logo"></i> follow my github</a>
+        </div>
+      </div>
     </header>
 
     <main>
       <div class="content">
-        <article class="about">
+        <article class="about" id="about">
           <div class="about-image">
             <img src="img/foto-abdul.jpeg" alt="foto-sang-pemilik-masapistech">
           </div>
@@ -62,13 +60,33 @@
             <a href="" class="instagram"><i class="ph ph-instagram-logo"></i> follow my instagram</a>
           </div>
         </article>
-        <article class="cpu">
+        <article class="cpu" id="cpu">
           <header class="title-cpu">
-            <h1>What is CPU ?</h1>
-            <p>
-               The CPU, or Central Processing Unit, is the main component in a computer that serves as the brain of the system. The CPU is responsible for executing instructions and processing data. It performs arithmetic, logical operations, and controls other hardware. In a computer, the CPU interacts with memory, storage, and other devices to run programs and applications. In general, the faster and more powerful the CPU, the better the performance of the computer. Now there are two companies that dominate the laptop/computer processor market in the world, namely <strong>INTEL</strong> and <strong>AMD</strong>.
-            </p>
+            <div class="description-cpu">
+              <h1>What is <span class="color-cpu">CPU</span> ?</h1>
+              <p>
+                 The CPU, or Central Processing Unit, is the main component in a computer that serves as the brain of the system. The CPU is responsible for executing instructions and processing data. It performs arithmetic, logical operations, and controls other hardware. In a computer, the CPU interacts with memory, storage, and other devices to run programs and applications. In general, the faster and more powerful the CPU, the better the performance of the computer. Now there are two companies that dominate the laptop/computer processor market in the world, namely <strong>INTEL</strong> and <strong>AMD</strong>.
+              </p>
+              <a href="" class="button-cpu"><i class="ph ph-book-open-text"></i> More about cpu</a>
+            </div>
+            <div class="image-cpu">
+              <img src="img/cpu-amd.jpg" alt="cpu amd">
+            </div>
           </header>
+          <section class="cpu-intel">
+            <header class="title-cpu-intel">
+              <div class="image-cpu-intel">
+                <img src="img/logo-intel.jpg" alt="logo intel">
+              </div>
+              <div class="description-cpu-intel">
+                <h2><span class="color-intel">Intel</span> processor</h2>
+                <p>
+                  Intel is a technology company that develops and manufactures processors, which are very important components in computers and other electronic devices. They are recognized as one of the largest chip manufacturers in the world. Founded in 1968, Intel is best known for its innovations in microprocessors. Their main products are processors that are used in various devices, ranging from personal computers to servers. In addition, Intel also develops other related technologies, such as graphics chips and memory. <strong>I will show you top 3 best cpu from intel...</strong>
+                </p>
+                <a href="" class="button-cpu-intel"><i class="ph ph-book-open-text"></i> More about Intel</a>
+              </div>
+            </header>
+          </section>
         </article>
       </div>
     </main>
