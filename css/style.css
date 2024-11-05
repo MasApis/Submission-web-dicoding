@@ -258,6 +258,7 @@ main .content .cpu .title-cpu .button-cpu:hover {
   background-color: #ECDFCC;
 }
 
+/* section cpu intel */
 main .content .cpu .cpu-intel {
   padding: 2.5rem 0rem;
 }
@@ -359,6 +360,113 @@ main .content .cpu .cpu-intel .card-container .card .button-card {
 }
 
 main .content .cpu .cpu-intel .card-container .card .button-card:hover {
+  border: 3px solid white;
+  color: white;
+  background-color: black;
+}
+
+/* section cpu amd */
+main .content .cpu .cpu-amd {
+  padding: 2.5rem 0rem;
+}
+
+main .content .cpu .cpu-amd .title-cpu-amd {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .content .cpu .cpu-amd .title-cpu-amd .image-cpu-amd img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+main .content .cpu .cpu-amd .title-cpu-amd .description-cpu-amd {
+  display: flex;
+  flex-direction: column;
+}
+
+main .content .cpu .cpu-amd .title-cpu-amd .description-cpu-amd h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+main .content .cpu .cpu-amd .title-cpu-amd .description-cpu-amd .color-amd {
+  color: #ae1212;
+}
+
+main .content .cpu .cpu-amd .title-cpu-amd .description-cpu-amd p {
+  font-size: 1.1rem;
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+}
+
+main .content .cpu .cpu-amd .title-cpu-amd .description-cpu-amd .button-cpu-amd {
+  border: 3px solid white;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 600;
+  transition: all 0.4s ease-in;
+  width: 290px;
+  margin-top: 1rem;
+}
+
+main .content .cpu .cpu-amd .title-cpu-amd .description-cpu-amd .button-cpu-amd:hover {
+  color: black;
+  background-color: #ECDFCC;
+}
+
+/* card amd */
+main .content .cpu .cpu-amd .card-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .content .cpu .cpu-amd .card-container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 24px;
+  padding: 1rem;
+  background-color: aliceblue;
+}
+
+main .content .cpu .cpu-amd .card-container .card h2 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+main .content .cpu .cpu-amd .card-container .card img {
+  border-radius: 12px;
+  width: 300px;
+  height: 300px;
+  /* height: 200px; */
+  object-fit: contain;
+  object-position: center;
+}
+
+main .content .cpu .cpu-amd .card-container .card .description-card ul li {
+  font-size: 1.2rem;
+}
+
+main .content .cpu .cpu-amd .card-container .card .button-card {
+  border: 3px solid black;
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+  transition: all 0.4s ease-in;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+main .content .cpu .cpu-amd .card-container .card .button-card:hover {
   border: 3px solid white;
   color: white;
   background-color: black;
