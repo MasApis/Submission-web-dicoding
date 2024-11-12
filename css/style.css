@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Poppins', Arial, san-serif;
+  width: 100%;
   /* background-color: #181C14; */
 }
 
@@ -52,6 +53,7 @@ header nav .navigation-button ul li a:hover {
 
 /* hero section */
 header .hero-section {
+  width: 100%;
   display: flex;
   background-color: #181818;
   flex-direction: column;
@@ -118,7 +120,8 @@ header .hero-section .button .github:hover {
 
 /* main */
 main {
-  position: relative;
+  /* position: relative; */
+  width: 100%;
   display: flex;
   padding: 0rem 0.4rem;
   gap: 0.9rem;
@@ -1317,7 +1320,4 @@ footer {
     font-size: 1rem;
     padding: 20px;
   }
-
-
 }
-
