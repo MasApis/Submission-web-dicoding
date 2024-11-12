@@ -8,42 +8,41 @@
 
 body {
   font-family: 'Poppins', Arial, san-serif;
-  max-width: 100%;
-  /* background-color: #181C14; */
 }
 
 /* navigation */
-header nav {
+nav {
   display: flex;
-  max-width: 100%;
   background-color:  #3C3D37;
-  position: fixed;
+  position: sticky;
   top: 0;
+  z-index: 1000;
+  transform: translateZ(0);
   align-items: center;
   padding: 1.5rem 2rem;
   justify-content: space-between;
 }
 
-header nav .logo {
+nav .logo {
   font-size: 2rem;
   font-weight: 700;
   color: #ECDFCC;
   letter-spacing: 2px;
 }
 
-header nav .navigation-button ul {
+nav .navigation-button ul {
   display: flex;
   gap: 3rem;
 }
 
-header nav .navigation-button ul li a {
+nav .navigation-button ul li a {
   font-size: 1.3rem;
   color: white;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
 }
 
-header nav .navigation-button ul li a:hover {
+nav .navigation-button ul li a:hover {
   color: black;
   padding: 0.5rem 1rem;
   background-color: #ECDFCC;
@@ -60,7 +59,7 @@ header .hero-section {
   gap: 0.3rem;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  height: 100vh;
 }
 
 header .hero-section h1 {
@@ -787,11 +786,6 @@ footer {
     width: max-content;
   }
 
-  /* hero section */
-  header .hero-section {
-    height: 118vh;
-  }
-
   header .hero-section h1 {
     font-size: 4.5rem;
   }
@@ -891,11 +885,6 @@ footer {
     margin: 1rem auto;
   }
 
-  /* hero section */
-  header .hero-section {
-    height: 139vh;
-  }
-
   header .hero-section h1 {
     font-size: 4rem;
   }
@@ -919,31 +908,31 @@ footer {
   }
 
   /* nav */
-  header nav {
+  nav {
     justify-content: center;
   }
 
-  header nav .logo {
+  nav .logo {
     display: none;
   }
 
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 499px) {
   /* navigation */
-  header nav {
+  nav {
     padding: 1rem;
   }
   
-  header nav .navigation-button ul {
+  nav .navigation-button ul {
     gap: 1.5rem;
   }
   
-  header nav .navigation-button ul li a {
+  nav .navigation-button ul li a {
     font-size: 1rem;
   }
   
-  header nav .navigation-button ul li a:hover {
+  nav .navigation-button ul li a:hover {
       padding: 0.2rem 0.5rem;
   }
 
@@ -953,7 +942,6 @@ footer {
     gap: 0.3rem;
     justify-content: center;
     align-items: start;
-    height: 139vh;
   }
   
   header .hero-section h1 {
@@ -1146,7 +1134,7 @@ footer {
   }
 
   main .content .cpu .cpu-amd .title-cpu-amd .image-cpu-amd img {
-    width: 350px;
+    width: 300px;
     margin-top: 30px;
     margin-bottom: -30px;
   }
@@ -1232,7 +1220,7 @@ footer {
   }
 
   main .content .gpu .gpu-nvidia .title-gpu-nvidia .image-gpu-nvidia img {
-    width: 350px;
+    width: 300px;
     margin: 30px 0px -30px 0px;
   }
 
@@ -1277,7 +1265,9 @@ footer {
 
   /* article contact */
   main .content .contact {
-    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
   }
 
   main .content .contact .description-contact h2 {
@@ -1290,7 +1280,7 @@ footer {
 
   /* Aside */
   main aside {
-    padding: 1rem 2.2rem;
+    padding: 0.5rem 1rem;
     margin: 20px auto;
     gap: 0.8rem;
   }
